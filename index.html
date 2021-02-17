@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Тут мы указываем description который будет отображаться в снипете">
+    <meta name="keywords" content="Тут указываем ключи по которым мы будем отображаться в органике">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>ABV-test</title>
+</head>
+
+<body>
+
+    <!--Модалка-->
+    <div id="openPopup" class="popup">
+        <div class="popup_dialog">
+            <div class="popup_content">
+                <div class="popup_header">
+                    <span id="close" class="close">×</span>
+                </div>
+                <div class="popup_body">
+                    <p>МОДАЛКА</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ШАПКА-->
+    <header id="header" class="header">
+        <input class="header-menu-check" type="checkbox" name="menu" id="navigation">
+        <label for="navigation" class="header-menu-label"><span></span></label>
+        <ul class="header_list">
+            <li class="header_list_item"><a href="#" class="header_list_item_link">Главная</a></li>
+            <li class="header_list_item"><a href="#slider" class="header_list_item_link">Слайдер</a></li>
+            <li class="header_list_item"><a href="#cards" class="header_list_item_link">Карточки</a></li>
+            <li class="header_list_item"><a href="#form_title" class="header_list_item_link">Форма</a></li>
+            <li class="header_list_item"><a href="#list" class="header_list_item_link">Список</a></li>
+            <li class="header_list_item"><a href="#" class="header_list_item_link popup_open">Модалка</a></li>
+        </ul>
+    </header>
+    <!--БАННЕР-->
+    <div id="banner" class="banner">
+        <img class="banner_img" src="image/banner.jpg" alt="banner">
+        <div class="banner_wrapper">
+            <h1 class="banner_title">ТЕСТОВОЕ ЗАДАНИЕ<br>АБВ! СТУДИЯ</h1>
+            <button class="banner_btn popup_open">Модальное окно</button>
+        </div>
+    </div>
+    <!--СЛАЙДЕР-->
+    <h2 id="slider" class="title">СЛАЙДЕР</h2>
+    <div class="slider">
+        <div class="slider_block single-item">
+            <div class="slide"><img src="image/slide-1.jpg" alt="slide"></div>
+            <div class="slide"><img src="image/slide-1.jpg" alt="slide"></div>
+            <div class="slide"><img src="image/slide-1.jpg" alt="slide"></div>
+        </div>
+    </div>
+    <!--КАРТОЧКИ-->
+    <h2 id="cards" class="title">КАРТОЧКИ</h2>
+    <div class="slider_cards">
+        <div class="slider_block_cards multiple-items">
+            <div class="slide_card">
+                <p class="slide_card_service">УСЛУГА-1</p>
+                <img class="slide_card_image" src="image/service.jpg" alt="service">
+                <button class="banner_btn popup_open">Модальное окно</button>
+            </div>
+            <div class="slide_card">
+                <p class="slide_card_service">УСЛУГА-2</p>
+                <img class="slide_card_image" src="image/service.jpg" alt="service">
+                <button class="banner_btn popup_open">Модальное окно</button>
+            </div>
+            <div class="slide_card">
+                <p class="slide_card_service">УСЛУГА-3</p>
+                <img class="slide_card_image" src="image/service.jpg" alt="service">
+                <button class="banner_btn popup_open">Модальное окно</button>
+            </div>
+            <div class="slide_card">
+                <p class="slide_card_service">УСЛУГА-4</p>
+                <img class="slide_card_image" src="image/service.jpg" alt="service">
+                <button class="banner_btn popup_open">Модальное окно</button>
+            </div>
+            <div class="slide_card">
+                <p class="slide_card_service">УСЛУГА-5</p>
+                <img class="slide_card_image" src="image/service.jpg" alt="service">
+                <button class="banner_btn popup_open">Модальное окно</button>
+            </div>
+            <div class="slide_card">
+                <p class="slide_card_service">УСЛУГА-6</p>
+                <img class="slide_card_image" src="image/service.jpg" alt="service">
+                <button class="banner_btn popup_open">Модальное окно</button>
+            </div>
+        </div>
+    </div>
+    <!--ФОРМА-->
+    <h2 id="form_title" class="title">ФОРМА</h2>
+    <div class="form">
+
+        <h3 class="form_subtitle">Стандартная форма обратной связи</h3>
+        <form id="form" action="mail.php" method="get" class="form_block">
+            <input type="hidden" name="project_name" value="http://petrov2l.beget.tech/ABV-test/">
+            <input type="hidden" name="admin_email" value="petrovvea@gmail.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+            <div class="form_block_item">
+                <div class="form_block_item_inner">
+                    <input id="form_input_name" required type="text" name="name" class="form_input"
+                        placeholder="Ваше Имя*">
+                </div>
+                <div class="form_block_item_inner">
+                    <input id="form_input_tel" required type="tel" name="tel" class="form_input"
+                        placeholder="Ваш Номер*">
+                </div>
+            </div>
+            <div class="form_block_item">
+                <textarea name="message" id="af_message" rows="5" cols="33" class="form_textarea"
+                    placeholder="Сообщение"></textarea>
+            </div>
+            <button type="submit" class="banner_btn">Отправить</button>
+        </form>
+
+    </div>
+    <!--СПИСОК-->
+    <h2 id="list" class="title">СПИСОК</h2>
+    <div class="list">
+        <div class="list_wrapper">
+            <div class="list_block">
+                <input id="list_check0" name="list_check" class="list_block_accordion" type="checkbox">
+                <label for="list_check0" class="list_block_accordion_label">
+                    <span>Список 1</span><i></i>
+                </label>
+                <div class="list_block_accordion_text">
+                    <p>Проанализируем рекламные кампании в Яндекс.Директ и Google Ads. Предоставим развернутый отчет по
+                        параметрам рекламных кампаний. Определим возможность использования действующих наработок.</p>
+                </div>
+            </div>
+            <div class="list_block">
+                <input id="list_check1" name="list_check" class="list_block_accordion" type="checkbox">
+                <label for="list_check1" class="list_block_accordion_label">
+                    <span>Список 2</span><i></i>
+                </label>
+                <div class="list_block_accordion_text">
+                    <p>Проанализируем рекламные кампании в Яндекс.Директ и Google Ads. Предоставим развернутый отчет по
+                        параметрам рекламных кампаний. Определим возможность использования действующих наработок.</p>
+                </div>
+            </div>
+            <div class="list_block">
+                <input id="list_check2" name="list_check" class="list_block_accordion" type="checkbox">
+                <label for="list_check2" class="list_block_accordion_label">
+                    <span>Список 3</span><i></i>
+                </label>
+                <div class="list_block_accordion_text">
+                    <p>Проанализируем рекламные кампании в Яндекс.Директ и Google Ads. Предоставим развернутый отчет по
+                        параметрам рекламных кампаний. Определим возможность использования действующих наработок.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ПОДВАЛ-->
+    <footer id="footer" class="footer">
+        <ul class="footer_list">
+            <li class="footer_list_item"><a href="#" class="footer_list_item_link">Главная</a></li>
+            <li class="footer_list_item"><a href="#slider" class="footer_list_item_link">Слайдер</a></li>
+            <li class="footer_list_item"><a href="#cards" class="footer_list_item_link">Карточки</a></li>
+            <li class="footer_list_item"><a href="#form_title" class="footer_list_item_link">Форма</a></li>
+            <li class="footer_list_item"><a href="#list" class="footer_list_item_link">Список</a></li>
+            <li class="footer_list_item"><a href="#" class="footer_list_item_link popup_open">Модалка</a></li>
+        </ul>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
